@@ -31,23 +31,25 @@
     <div class="content">
       <p class="msg"><img src="assets/simbolo_ponto_exclamacao.png" alt="simbolo de exclamação">Apenas letras minúsculas e sem acento.</p>
       <div class="wrapper-sections">
-        <section id="sessao-text_area">
-          <form action="">
+        
+        <section id="sessao-text_area" class="">
+
+          <form>
             <textarea type="text" id="campo-text_area" name="campo-text_area"  placeholder="Digite seu texto" ></textarea>         
-            <span id="caixa-msg">
-              
-            </span>      
+            <span id="caixa-msg"></span>      
             <div id="caixa-botoes_principais">
               <input id="botao-criptografar" class="botao" type="submit" value="Criptografar" onclick="criptografar()">
               <input id="botao-descriptografar" class="botao" type="submit" value="Descriptografar" onclick="descriptografar()">           
             </div>
-          </form>   
+          </form> 
+
         </section>  
     
         <section id="sessao-retorna_texto">
             <textarea id="texto_criptografado"></textarea>
             <input id="botao-copiar" class="botao copy-button" type="submit" value="Copiar" onclick="copiaTexto()">
         </section>
+
       </div>
     </div>  
     
