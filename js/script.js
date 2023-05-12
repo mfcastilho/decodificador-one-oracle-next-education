@@ -49,7 +49,6 @@ function criptografar(){
       textoCriptografado.textContent = resultado;   
     }else if(resp){
     
-      let sessaoRetornaTexto = document.querySelector("#sessao-retorna_texto");
       textoCriptografado.classList.add("danger");
 
       textoCriptografado.classList.remove("invisivel");
@@ -105,8 +104,10 @@ function copiaTexto() {
   
   var copiaTexto = document.querySelector("#texto_criptografado");
   navigator.clipboard.writeText(copiaTexto.value);
-  alert("Texto Copiado");
-  form.reset();
+  Swal.fire('Texto Copiado');
+  document.querySelector("#campo-text_area").value = copiaTexto.value;
+  // alert("Texto Copiado");
+  // form.reset();
   textoCriptografado.textContent = "";
 }
 
