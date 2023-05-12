@@ -25,8 +25,8 @@ function criptografar(){
   form.addEventListener("submit", function(event){
     event.preventDefault();
     x = document.getElementById("campo-text_area").value;
-    var resultado = "";
-    var resp = validandoTexto(x);
+    let resultado = "";
+    let resp = validandoTexto(x);
 
     if(!resp){
       for(var i = 0; i < x.length; i++){
