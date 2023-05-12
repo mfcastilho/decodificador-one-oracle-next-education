@@ -62,16 +62,20 @@ section form{
 #campo-text_area{
   border: none;
   border-radius: 3.2rem;
-  padding: .5rem;
-  padding-left: 1.8rem;
+
+  padding: 2rem;
+
   width: 48rem;
   height: 25rem;
+
   display: block;
-  font-size: 2rem;
+  
   background: #e7ecfd;
+
   opacity: .7;
   resize: none;/*tira os tracinhos do textarea*/
 
+  font-size: 2rem;
   font-weight: 800;
  
 }
@@ -126,7 +130,11 @@ section form{
   resize: none;
   background: #e7ecfd;
 
-  font-size: 1.8rem;
+
+  padding: 2rem;
+
+  font-size: 2rem;
+  font-weight: 800;
 }
 
 

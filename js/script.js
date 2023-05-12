@@ -1,16 +1,16 @@
 var x = "";
 
-var form = document.querySelector("form");
-var textoCriptografado = document.querySelector("#texto_criptografado");
-var botaoCriptografar = document.querySelector("#botao-criptografar");
-var botaDescriptografar = document.querySelector("#botao-descriptografar");
-var campoTextArea = document.querySelector("#campo-text_area");
+let form = document.querySelector("form");
+let textoCriptografado = document.querySelector("#texto_criptografado");
+let botaoCriptografar = document.querySelector("#botao-criptografar");
+let botaDescriptografar = document.querySelector("#botao-descriptografar");
+let campoTextArea = document.querySelector("#campo-text_area");
 
 function validandoTexto(x){
   //expressão regular(letras maiúsculas e letras com acentuação)
-  var regex = /^[A-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$/g;
+  let regex = /^[A-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]+$/g;
   
-  for(var i = 0; i < x.length; i++){
+  for(let i = 0; i < x.length; i++){
     
     if(regex.test(x.charAt(i))){
       console.log(true);
@@ -29,7 +29,7 @@ function criptografar(){
     let resp = validandoTexto(x);
 
     if(!resp){
-      for(var i = 0; i < x.length; i++){
+      for(let i = 0; i < x.length; i++){
         if(x.charAt(i) == 'a'){
           resultado += "ai";
         }else if(x.charAt(i) == 'e'){
@@ -45,31 +45,13 @@ function criptografar(){
         }
       }
 
-      
       textoCriptografado.classList.remove("danger");
-
-      let imgBoneco = document.querySelector("#imagem-boneco");
-      let msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
-      let botaoCopiar = document.querySelector("#caixa-botao_copiar");
-
-      imgBoneco.classList.add("invisivel");
-      msgNaoEncontrada.classList.add("invisivel");
-      botaoCopiar.classList.remove("invisivel");  
-      textoCriptografado.classList.remove("invisivel");
       textoCriptografado.textContent = resultado;   
     }else if(resp){
     
       let sessaoRetornaTexto = document.querySelector("#sessao-retorna_texto");
-      // sessaoRetornaTexto.classList.add("letra-invalida");
       textoCriptografado.classList.add("danger");
-      //document.getElementById("texto_criptografado").setAttribute("value",resultado);
-      let imgBoneco = document.querySelector("#imagem-boneco");
-      let msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
-      let botaoCopiar = document.querySelector("#caixa-botao_copiar");
-      
-      botaoCopiar.classList.add("invisivel");
-      imgBoneco.classList.add("invisivel");
-      msgNaoEncontrada.classList.add("invisivel");
+
       textoCriptografado.classList.remove("invisivel");
       textoCriptografado.textContent =  "Erro!É aceito somento letras minúsculas e sem acento!";
      
@@ -81,12 +63,17 @@ function criptografar(){
 function descriptografar(){
   form.addEventListener("submit", function(event){
     event.preventDefault();
-    var textoCriptografado = document.querySelector("#texto_criptografado");
+    let textoCriptografado = document.querySelector("#texto_criptografado");
+    console.log(textoCriptografado.value)
     x = document.getElementById("campo-text_area").value;
-    var resultado = "";
+    let resultado = "";
+    let y  = textoCriptografado.value
 
     
-    for(var i = 0; i < x.length; i++){
+    
+    for(let i = 0; i < x.length; i++){
+      
+
       if(x.charAt(i) == 'a'){
         resultado += "a";
         i+=1;
@@ -106,18 +93,9 @@ function descriptografar(){
         resultado += x.charAt(i);
       }
       
-
       textoCriptografado.textContent = resultado;
       textoCriptografado.classList.remove("danger");
-      //document.getElementById("texto_criptografado").setAttribute("value",resultado);
-      var imgBoneco = document.querySelector("#imagem-boneco");
-      var msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
-      var botaoCopiar = document.querySelector("#caixa-botao_copiar");
-
-      imgBoneco.classList.add("invisivel");
-      msgNaoEncontrada.classList.add("invisivel");
-      botaoCopiar.classList.remove("invisivel");
-      
+         
       textoCriptografado.classList.remove("invisivel");
     }  
   });
