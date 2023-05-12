@@ -21,7 +21,7 @@ body{
 
 header{
   display: inline-block;
-  margin: 3rem 0 0 5rem;
+  margin: 3% 0 0 5%;
 }
 
 .logo-alura{
@@ -68,6 +68,7 @@ section form{
   align-items: center;
   justify-content: space-between;
   
+  
 }
 
 #campo-text_area{
@@ -95,9 +96,6 @@ section form{
  #caixa-botoes_principais{
   text-align: center;
   width: 100%;
-  /* padding: 0 15px 0 15px;
-  margin-bottom: 0;
-  padding-bottom: 0;  */
 }
 
 #caixa-botoes_principais form{
@@ -184,11 +182,6 @@ section form{
   color: white;
 }
 
-.copy-butto{
-
-}
-
-
 
 footer{
   margin-top: 8rem;
@@ -219,5 +212,120 @@ footer h6{
 
 
 /* -- MEDIAS QUERIES -- */
+
+
+@media (max-width:980px){
+  .botao{
+    font-size: 1.5rem;
+  }
+
+  #sessao-text_area{
+    width: 45%;
+  }
+  
+  #sessao-text_area form{
+    gap: .6rem;
+  }
+  
+  #sessao-retorna_texto{
+    width: 45%;
+  }
+}
+
+@media (max-width:780px){
+
+  .logo-alura{
+    width: 9rem;
+  }
+
+  .msg{
+    margin-left: 14.8%;
+  }
+
+  .wrapper-sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 3rem;
+  }
+  
+  
+  #sessao-text_area{
+    width: 70%;
+  }
+  
+  #sessao-text_area form{
+    gap: .6rem;
+  }
+  
+  #sessao-retorna_texto{
+    width: 70%;
+  }
+  
+}
+
+@media (max-width:580px){
+  .logo-alura{
+    width: 8rem;
+  }
+}
+
+@media (max-width:480px){
+  .logo-alura{
+    width: 7rem;
+  }
+
+  .msg{
+    margin-left: 10.8%;
+  }
+
+  #sessao-text_area{
+    width: 80%;
+  }
+  
+  #sessao-text_area form{
+    gap: .6rem;
+  }
+  
+  #sessao-retorna_texto{
+    width: 80%;
+  }
+  
+}
+
+@media (max-width:380px){
+
+  .msg{
+    font-size: .9rem;
+  }
+
+  .msg img{
+    width: 1.6rem;
+  }
+
+  .logo-alura{
+    width: 6rem;
+  }
+
+  .botao{
+    font-size: 1.2rem;
+    height: 5.7rem;
+  }
+}
+
+@media (max-width:290px){
+  .logo-alura{
+    width: 5rem;
+  }
+
+  .botao{
+    font-size: 1rem;
+    height: 4.7rem;
+    border-radius: 1.4rem;
+  }
+}
+
+
 
 
