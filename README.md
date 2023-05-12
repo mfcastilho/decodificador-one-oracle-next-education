@@ -8,7 +8,7 @@ Resultado do primeiro desafio do programa ONE, da Oracle em parceria com a Alura
 - Decodificador de texto feito em HTML, CSS e JavaScript.
 
 
-     ![pagina-home](https://github.com/mfcastilho/decodificador-one-oracle-next-education/blob/master/screencast-bpconcjcammlapcogcnnelfmaeghhagj-2023.05.12-04_20_41.gif)
+     ![pagina-home](https://github.com/mfcastilho/decodificador-one-oracle-next-education/blob/master/assets/video-apresentation.gif)
 
 
 Chave de Criptografia
@@ -41,4 +41,4 @@ Deploy
 
 Badge pela Conclusão do Desafio
 ---
-<img width="400" heigth="400" src="https://github.com/mfcastilho/decodificador-one-oracle-next-education/blob/master/cms_files_10224_1671211139Prancheta_3.png">
+<img width="400" heigth="400" src="https://github.com/mfcastilho/decodificador-one-oracle-next-education/blob/master/assets/challenge-badge.png">
