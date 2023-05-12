@@ -1,5 +1,5 @@
 # Challenge-Oracle-One
-- ALURA - PROGRAMA DE FORMAÇÃO ONE BR - TURMA 2 -
+- ALURA - PROGRAMA DE FORMAÇÃO ONE BR - TURMA 5 -
 
 -PRIMEIRO DESAFIO:
    * Construir um app que criptografa e descriptografa textos de forma simples
