@@ -21,5 +21,3 @@
 
 -TESTE ELE AQUI:
    * https://mfcastilho.github.io/Challenge-Oracle-One/
-# decodificador-challenge-one-oracle-next-education
-# decodificador-one-oracle-next-education
