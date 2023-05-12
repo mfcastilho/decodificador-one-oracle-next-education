@@ -5,7 +5,7 @@
 Sobre o Projeto
 ---
 Resultado do primeiro desafio do programa ONE, da Oracle em parceria com a Alura:
-- Decodificador de texto feito em HTML, CSS e JavaScript.
+- Decodificador de texto com design responsivo, feito em HTML, CSS e JavaScript.
 
 
      ![pagina-home](https://github.com/mfcastilho/decodificador-one-oracle-next-education/blob/master/assets/video-apresentation.gif)
