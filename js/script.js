@@ -13,11 +13,11 @@ function validandoTexto(x){
   for(var i = 0; i < x.length; i++){
     
     if(regex.test(x.charAt(i))){
-       //console.log(regex.test(x));
-      //return regex.test(x.charAt(i));
+      console.log(true);
       return true;
     }
   }
+  console.log(false);
   return false;
 }
 
@@ -30,12 +30,12 @@ function criptografar(){
 
     if(!resp){
       for(var i = 0; i < x.length; i++){
-        if(x.charAt(i) == 'e'){
+        if(x.charAt(i) == 'a'){
+          resultado += "ai";
+        }else if(x.charAt(i) == 'e'){
           resultado += "enter";
         }else if(x.charAt(i) == 'i'){
           resultado += "imes";
-        }else if(x.charAt(i) == 'a'){
-          resultado += "ai";
         }else if(x.charAt(i) == 'o'){
           resultado += "ober";
         }else if(x.charAt(i) == 'u'){
@@ -46,11 +46,11 @@ function criptografar(){
       }
 
       
-      textoCriptografado.classList.remove("letra_invalida");
-      //document.getElementById("texto_criptografado").setAttribute("value",resultado);
-      var imgBoneco = document.querySelector("#imagem-boneco");
-      var msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
-      var botaoCopiar = document.querySelector("#caixa-botao_copiar");
+      textoCriptografado.classList.remove("danger");
+
+      let imgBoneco = document.querySelector("#imagem-boneco");
+      let msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
+      let botaoCopiar = document.querySelector("#caixa-botao_copiar");
 
       imgBoneco.classList.add("invisivel");
       msgNaoEncontrada.classList.add("invisivel");
@@ -59,13 +59,13 @@ function criptografar(){
       textoCriptografado.textContent = resultado;   
     }else if(resp){
     
-      var sessaoRetornaTexto = document.querySelector("#sessao-retorna_texto");
-      sessaoRetornaTexto.classList.add("letra-invalida");
-      textoCriptografado.classList.add("letra_invalida");
+      let sessaoRetornaTexto = document.querySelector("#sessao-retorna_texto");
+      // sessaoRetornaTexto.classList.add("letra-invalida");
+      textoCriptografado.classList.add("danger");
       //document.getElementById("texto_criptografado").setAttribute("value",resultado);
-      var imgBoneco = document.querySelector("#imagem-boneco");
-      var msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
-      var botaoCopiar = document.querySelector("#caixa-botao_copiar");
+      let imgBoneco = document.querySelector("#imagem-boneco");
+      let msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
+      let botaoCopiar = document.querySelector("#caixa-botao_copiar");
       
       botaoCopiar.classList.add("invisivel");
       imgBoneco.classList.add("invisivel");
@@ -108,7 +108,7 @@ function descriptografar(){
       
 
       textoCriptografado.textContent = resultado;
-      textoCriptografado.classList.remove("letra_invalida");
+      textoCriptografado.classList.remove("danger");
       //document.getElementById("texto_criptografado").setAttribute("value",resultado);
       var imgBoneco = document.querySelector("#imagem-boneco");
       var msgNaoEncontrada = document.querySelector("#msg-nao_encontrada");
